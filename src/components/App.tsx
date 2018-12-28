@@ -3,21 +3,16 @@ import { hot } from "react-hot-loader"
 import { selectArticle } from "../actions"
 import Homepage from "./Homepage/Homepage"
 import { BrowserRouter, Route, Link } from "react-router-dom"
-const PATH = process.env.NODE_ENV === "production" ? "/inSocialNetwork/" : "/"
+const PATH = process.env.NODE_ENV === "production" ? "/nexter/" : "/"
 
-interface IState {
-  isOpen?: boolean
-  showPage?: boolean
-  navColShow?: boolean
-  menu?: any
-}
+interface IState {}
 interface IProps {}
 
 class App extends Component<IProps, IState> {
   render() {
     return (
       <BrowserRouter>
-        <div className="wrapper 2">
+        <div className="wrapper">
           <Route path={`${PATH}`} exact component={Homepage} />
         </div>
       </BrowserRouter>
