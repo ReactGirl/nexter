@@ -6,7 +6,9 @@ import Header from "../Header/Header"
 import Story from "../Story/Story"
 import Footer from "../Footer/Footer"
 
-//@ts-ignore
+interface IState {}
+interface IProps {}
+
 class Homepage extends Component<IProps, IState> {
   render() {
     return (
